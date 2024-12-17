@@ -1,5 +1,6 @@
 # Ignore node_modules
 client/node_modules
+client/build
 server/node_modules
 
 # Ignore environment variables file

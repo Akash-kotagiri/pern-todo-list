@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+
+const API_URL = process.env.REACT_APP_BACKEND_URL;
 const EditTodo = ({ todo }) => {
   const [description, setDescription] = useState(todo.description);
 
@@ -8,7 +10,7 @@ const EditTodo = ({ todo }) => {
     e.preventDefault();
     try {
       const body = { description };
-      await fetch(`http://localhost:3001/todos/${todo.todo_id}`, {
+      await fetch(`${API_URL}/todos/${todo.todo_id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),

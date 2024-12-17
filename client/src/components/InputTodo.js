@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+
+const API_URL = process.env.REACT_APP_BACKEND_URL;
 const InputTodo = () => {
 
     const [description, setDescription] = useState('');
@@ -8,7 +10,7 @@ const InputTodo = () => {
         e.preventDefault();
         try {
             const body = { description };
-            const response = await fetch("http://localhost:3001/todos", {
+            const response = await fetch(`${API_URL}/todos`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json"},
                 body: JSON.stringify(body)

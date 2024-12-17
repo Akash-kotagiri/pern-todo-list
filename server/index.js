@@ -6,6 +6,10 @@ require("dotenv").config();
 
 const PORT = process.env.PORT || 3001;
 
+pool.connect()
+ .then(() => console.log("Connected to PostgresSQL"))
+ .catch((err) => console.error("Connection error", err.stack));
+
 //middleware
 app.use(cors());
 app.use(express.json()); // allows to access the req.body

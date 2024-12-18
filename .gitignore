@@ -4,3 +4,4 @@ server/node_modules
 
 # Ignore environment variables file
 server/.env
+client/.env

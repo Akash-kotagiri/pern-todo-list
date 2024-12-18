@@ -2,7 +2,9 @@
 A full-stack Todo List application built using the PERN stack: PostgreSQL, Express, React, and Node.js. This project demonstrates CRUD operations, allowing users to create, read, update, and delete their todos.
 
 ## Live link 
-              ------>    https://pern-todo-list-5o1i.onrender.com 
+ 
+https://pern-todo-list-5o1i.onrender.com 
+
 ## Features
 Add Todos: Create new tasks to keep track of your to-dos.
 View Todos: See a list of all your tasks in an organized layout.
